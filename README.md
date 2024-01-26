@@ -44,16 +44,17 @@ Before you begin, ensure you have the following installed:
 
 3. Install dependencies:
 
-  ```sh
+  ```
    npm install
+```
 
-3. Start the development server:
+## Usage
+
+ Start the development server:
 
  ```bash
    npm start
-
-
-## Usage
+```
 
 Open your browser and visit http://localhost:3000 to view the feedback form.
 
