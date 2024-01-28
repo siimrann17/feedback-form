@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       questions: [],
       choices: [],
-      submittedFeedback: null, // New state to store submitted feedback
+      submittedFeedback: null,
     };
   }
 
@@ -18,7 +18,7 @@ class App extends Component {
       .then((data) => {
         // Extract questions from the API response and update state
         const questions = data.feedbackQuestions.map((question) => question);
-        const choices = Array.from({ length: questions.length }, () => ''); // Initialize choices with empty strings
+        const choices = Array.from({ length: questions.length }, () => ''); 
 
         this.setState({ questions, choices });
       })
